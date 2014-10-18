@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Diagnostics;
 
 
 
-/**/ 
+/*namespace A_Sharp_Bench*/ 
 namespace A_Sharp_Bench
 {
 
@@ -14,50 +15,77 @@ namespace A_Sharp_Bench
     {
 
         /*Prime Calculation*/ 
-        public bool Prime_calculation(long Number)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="Number"></param>
+        /// <returns></returns>
+        public bool Prime_calculation(ulong Number)
         {
             bool Prime_isTrue = true;
-            long i;
-            int Counter = 0; 
-
+            ulong i;
+             
             /**/ 
-            for (i = 2; i < (long)(Number / 2); i++)
+            for (i = 2; i <= (ulong)(Number / 2); i++)
             {
                 /**/
-                if ((Number % i) == 0)
+                if ((ulong)(Number % i) == 0)
                 {
-                    Counter++;
+                    Prime_isTrue = false;
+                    break;
                 }
                 else
                 {
-                  /*Do nothing*/ 
+                    Prime_isTrue = true; 
                 }
             }
 
-            /**/
-            if (Counter != 0) {Prime_isTrue = false;}
-            else {Prime_isTrue = true;}
-
-
-
+            //Console.WriteLine("{0}", Prime_isTrue); 
             return Prime_isTrue; 
         }
 
 
 
-
         /*Mersenne Prime Calculation*/
-        public bool Mersenne_Prime_Calculation(long Number)
+        public bool Mersenne_Prime_Calculation(ulong Number)
         {
-            bool isTrue = true;
+            bool MPrime_isTrue = true;
+            ulong MPNumber;  
+            
+            /**/
+            if (Prime_calculation(Number) == true)
+            {
+                
+                /**/ 
+                MPNumber = (ulong)(Math.Pow(2,Number)-1);
+ 
 
-            return isTrue; 
+                /**/
+                if (Prime_calculation(MPNumber) == true)
+                {
+                    /*Number is Mersene Prime*/ 
+                    MPrime_isTrue = true; 
+                }
+                else
+                {
+                    /*Number is Prime, bt not Mersenne Prime*/ 
+                    MPrime_isTrue = false; 
+                }
+
+            }
+            else
+            {
+             /*Number is not Prime*/
+             MPrime_isTrue = false;
+            }
+
+
+            return MPrime_isTrue; 
          }
 
 
-
-
-    }
+        /*new Algo?*/ 
+   }
 
 
 
