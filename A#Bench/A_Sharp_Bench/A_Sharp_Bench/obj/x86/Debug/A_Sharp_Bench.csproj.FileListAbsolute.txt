@@ -14,3 +14,4 @@ C:\Users\alex.marinescu\Desktop\Hardware-Divide-by-Zero\A#Bench\A_Sharp_Bench\A_
 C:\Users\alex.marinescu\Desktop\Hardware-Divide-by-Zero\A#Bench\A_Sharp_Bench\A_Sharp_Bench\obj\x86\Debug\A_Sharp_Bench.A_Sharp_Bench.resources
 C:\Users\alex.marinescu\Desktop\Hardware-Divide-by-Zero\A#Bench\A_Sharp_Bench\A_Sharp_Bench\obj\x86\Debug\A_Sharp_Bench.Properties.Resources.resources
 C:\Users\alex.marinescu\Desktop\Hardware-Divide-by-Zero\A#Bench\A_Sharp_Bench\A_Sharp_Bench\obj\x86\Debug\A_Sharp_Bench.csproj.GenerateResource.Cache
+C:\Users\alex.marinescu\Desktop\Hardware-Divide-by-Zero\A#Bench\A_Sharp_Bench\A_Sharp_Bench\obj\x86\Debug\A_Sharp_Bench.Chart.resources

@@ -31,12 +31,14 @@
             this.Launch = new System.Windows.Forms.Button();
             this.checkbox_Prime = new System.Windows.Forms.CheckBox();
             this.checkbox_MPrime = new System.Windows.Forms.CheckBox();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.Progress = new System.Windows.Forms.Label();
+            this.Open_Chart_Button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Launch
             // 
+            this.Launch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Launch.Location = new System.Drawing.Point(338, 38);
             this.Launch.Name = "Launch";
             this.Launch.Size = new System.Drawing.Size(107, 84);
@@ -65,15 +67,17 @@
             this.checkbox_MPrime.Text = "Mersenne Prime Calculation";
             this.checkbox_MPrime.UseVisualStyleBackColor = true;
             // 
-            // progressBar1
+            // progressBar
             // 
-            this.progressBar1.Location = new System.Drawing.Point(24, 165);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(315, 23);
-            this.progressBar1.TabIndex = 3;
+            this.progressBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.progressBar.Location = new System.Drawing.Point(24, 165);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(315, 23);
+            this.progressBar.TabIndex = 3;
             // 
             // Progress
             // 
+            this.Progress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Progress.AutoSize = true;
             this.Progress.Location = new System.Drawing.Point(33, 143);
             this.Progress.Name = "Progress";
@@ -81,13 +85,24 @@
             this.Progress.TabIndex = 4;
             this.Progress.Text = "Progress";
             // 
+            // Open_Chart_Button
+            // 
+            this.Open_Chart_Button.Location = new System.Drawing.Point(176, 326);
+            this.Open_Chart_Button.Name = "Open_Chart_Button";
+            this.Open_Chart_Button.Size = new System.Drawing.Size(121, 42);
+            this.Open_Chart_Button.TabIndex = 5;
+            this.Open_Chart_Button.Text = "Open Chart";
+            this.Open_Chart_Button.UseVisualStyleBackColor = true;
+            this.Open_Chart_Button.Click += new System.EventHandler(this.Open_Chart_Button_Click);
+            // 
             // A_Sharp_Bench
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(478, 415);
+            this.Controls.Add(this.Open_Chart_Button);
             this.Controls.Add(this.Progress);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.progressBar);
             this.Controls.Add(this.checkbox_MPrime);
             this.Controls.Add(this.checkbox_Prime);
             this.Controls.Add(this.Launch);
@@ -103,8 +118,9 @@
         private System.Windows.Forms.Button Launch;
         private System.Windows.Forms.CheckBox checkbox_Prime;
         private System.Windows.Forms.CheckBox checkbox_MPrime;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.Label Progress;
+        private System.Windows.Forms.Button Open_Chart_Button;
     }
 }
 
