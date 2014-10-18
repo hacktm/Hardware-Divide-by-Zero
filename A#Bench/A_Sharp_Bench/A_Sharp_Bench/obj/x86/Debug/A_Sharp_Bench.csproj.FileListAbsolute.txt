@@ -6,3 +6,11 @@ C:\Users\alex.marinescu\Desktop\A#Bench\A_Sharp_Bench\A_Sharp_Bench\obj\x86\Debu
 C:\Users\alex.marinescu\Desktop\A#Bench\A_Sharp_Bench\A_Sharp_Bench\obj\x86\Debug\A_Sharp_Bench.csproj.GenerateResource.Cache
 C:\Users\alex.marinescu\Desktop\A#Bench\A_Sharp_Bench\A_Sharp_Bench\obj\x86\Debug\A_Sharp_Bench.exe
 C:\Users\alex.marinescu\Desktop\A#Bench\A_Sharp_Bench\A_Sharp_Bench\obj\x86\Debug\A_Sharp_Bench.pdb
+C:\Users\alex.marinescu\Desktop\Hardware-Divide-by-Zero\A#Bench\A_Sharp_Bench\A_Sharp_Bench\bin\Debug\A_Sharp_Bench.exe.config
+C:\Users\alex.marinescu\Desktop\Hardware-Divide-by-Zero\A#Bench\A_Sharp_Bench\A_Sharp_Bench\obj\x86\Debug\A_Sharp_Bench.exe
+C:\Users\alex.marinescu\Desktop\Hardware-Divide-by-Zero\A#Bench\A_Sharp_Bench\A_Sharp_Bench\obj\x86\Debug\A_Sharp_Bench.pdb
+C:\Users\alex.marinescu\Desktop\Hardware-Divide-by-Zero\A#Bench\A_Sharp_Bench\A_Sharp_Bench\bin\Debug\A_Sharp_Bench.exe
+C:\Users\alex.marinescu\Desktop\Hardware-Divide-by-Zero\A#Bench\A_Sharp_Bench\A_Sharp_Bench\bin\Debug\A_Sharp_Bench.pdb
+C:\Users\alex.marinescu\Desktop\Hardware-Divide-by-Zero\A#Bench\A_Sharp_Bench\A_Sharp_Bench\obj\x86\Debug\A_Sharp_Bench.A_Sharp_Bench.resources
+C:\Users\alex.marinescu\Desktop\Hardware-Divide-by-Zero\A#Bench\A_Sharp_Bench\A_Sharp_Bench\obj\x86\Debug\A_Sharp_Bench.Properties.Resources.resources
+C:\Users\alex.marinescu\Desktop\Hardware-Divide-by-Zero\A#Bench\A_Sharp_Bench\A_Sharp_Bench\obj\x86\Debug\A_Sharp_Bench.csproj.GenerateResource.Cache
