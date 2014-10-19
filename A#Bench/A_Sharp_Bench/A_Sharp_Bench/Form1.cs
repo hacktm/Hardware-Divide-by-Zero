@@ -20,7 +20,7 @@ namespace A_Sharp_Bench
     public partial class A_Sharp_Bench : Form
     {
         static Algo_Execution algo_exec = new Algo_Execution();
-        
+        string RxString;
 
         /*Globals*/
         double Fast = 0;
@@ -42,10 +42,17 @@ namespace A_Sharp_Bench
 
             /**/
             InitializeComponent();
+            Serial_Init();
 
         }
 
-
+        public void Serial_Init()
+        {
+            serialPort1.PortName = "COM4";
+            serialPort1.BaudRate = 9600;
+            serialPort1.Open();
+            serialPort1.Write("1");
+        }
         /**/ 
         public void Launch_Execution()
         {
@@ -138,6 +145,7 @@ namespace A_Sharp_Bench
                 }
 
 
+                
                 /*Progress bar incrementation*/ 
                 progressBar.Increment(20);
 
@@ -148,48 +156,85 @@ namespace A_Sharp_Bench
  
             }
 
+           
+ 
+
             /*Returns Total Time of loop execution*/
             Console.BackgroundColor = ConsoleColor.Blue;
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Total time:{0}\n",Total_Time);
+
+
+
+            /*Delta*/
+            double Delta = Fast - Slow;
+            Console.WriteLine("Delta is:{0}\n", Delta); 
  
         }
 
-
-
-        /*Launch button*/ 
-        private void Launch_Click(object sender, EventArgs e)
+        private void beginTest(object sender, EventArgs e)
         {
             Console.ResetColor();
-            Console.Clear(); 
+            Console.Clear();
 
-            
+
 
             /*4 - None of them*/
             if ((checkbox_Prime.Checked == false) && (checkbox_MPrime.Checked == false))
             {
-                Console.Clear(); 
+                Console.Clear();
 
                 Console.BackgroundColor = ConsoleColor.Red;
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("You must select at lest one value!");
                 Console.ResetColor();
             }
+            else
+            {
+                /*Program Execution*/
+                Loop_execution();
 
-            
+
+                /*Resetting progress bar to 0*/
+                Thread.Sleep(500);
+                progressBar.Value = 0;
+            }
 
             Console.ResetColor();
-            Thread.Sleep(1000);           
+            Thread.Sleep(1000);
+
+            serialPort1.Write("2");
+
+            Chart form2 = new Chart();
+            form2.ShowDialog(); 
+        }
+
+        /*Launch button*/ 
+        private void Launch_Click(object sender, EventArgs e)
+        {
+            
         }
 
         /*Open Chart Button*/
         private void Open_Chart_Button_Click(object sender, EventArgs e)
         {
-            Chart form2 = new Chart();
-            form2.ShowDialog(); 
         }
 
-       
+
+        /*Menu Strip : HELP -> About*/ 
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Made by: Team Divide by Zero");   
+        }
+        private void serialPort1_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
+        {
+            RxString = serialPort1.ReadExisting().ToString();
+            if (RxString == "1")
+            {
+                Thread.Sleep(1000);
+                this.Invoke(new EventHandler(beginTest));
+            }
+        }
 
              
 

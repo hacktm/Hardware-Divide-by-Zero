@@ -17,16 +17,21 @@ namespace A_Sharp_Bench
         public Chart()
         {
             InitializeComponent();
+            Show_Graphics();
         }
 
-
-        /*Load Chart Button*/ 
-        private void Load_Chart_Button_Click(object sender, EventArgs e)
+        private void Show_Graphics()
         {
             CPU_Chart.Series["Time"].Points.AddXY("Intel Core i5 - 4200u", 102946);
             CPU_Chart.Series["Time"].Points.AddXY("AMD FX-8320", 93617);
             CPU_Chart.Series["Time"].Points.AddXY("Core i7 - 4770k", 82989);
-            CPU_Chart.Series["Time"].Points.AddXY("YOUR CPU", A_Sharp_Bench.Total_Time);  
+            CPU_Chart.Series["Time"].Points.AddXY("YOUR CPU", A_Sharp_Bench.Total_Time); 
+        }
+
+        /*Load Chart Button*/ 
+        private void Load_Chart_Button_Click(object sender, EventArgs e)
+        {
+           
         }
 
         

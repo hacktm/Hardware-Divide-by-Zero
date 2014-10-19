@@ -17,7 +17,7 @@ namespace A_Sharp_Bench
         public void ExecPrime_Number()
         {
             ulong Number_Range;
-            for (Number_Range = 2; Number_Range <= 32; Number_Range++)
+            for (Number_Range = 2; Number_Range <= 130000; Number_Range++)
             {
                 algo.Prime_calculation(Number_Range);
             }
