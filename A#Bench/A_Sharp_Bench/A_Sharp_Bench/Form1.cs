@@ -28,6 +28,8 @@ namespace A_Sharp_Bench
         public static long Total_Time = 0;
         
 
+        
+
         /*Component Initialization*/ 
         public A_Sharp_Bench()
         {
@@ -73,6 +75,10 @@ namespace A_Sharp_Bench
                 algo_exec.ExecPrime_Number();
                 algo_exec.execMPrime_Number();
             }
+
+
+
+ 
         }
 
 
@@ -84,8 +90,6 @@ namespace A_Sharp_Bench
             long oldTimeMs = 100000000;
 
              
-
-
             /*Start of execution console*/ 
             Console.BackgroundColor = ConsoleColor.Blue;
             Console.ForegroundColor = ConsoleColor.White;
@@ -172,34 +176,10 @@ namespace A_Sharp_Bench
                 Console.ResetColor();
             }
 
-            /**/ 
-            Loop_execution();
+            
 
             Console.ResetColor();
-            Thread.Sleep(1000);
-
-
-            /*Print slowest and fastest time*/ 
-            Console.BackgroundColor = ConsoleColor.Blue;
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("Fastest time:{0}", Slow);
-            Console.WriteLine("Slowest time:{0}\n", Fast);
-
-
-            /*Delta*/
-            double Delta = Fast - Slow;
-            Console.WriteLine("Delta:{0}\n", Delta);
-
-            /*End of execution*/
-            Console.BackgroundColor = ConsoleColor.Blue;
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("End of execution\n"); 
-
-            /*Setting the progress bar back to 0*/
-            progressBar.Value = 0; 
-            
-             
-            
+            Thread.Sleep(1000);           
         }
 
         /*Open Chart Button*/
@@ -208,6 +188,8 @@ namespace A_Sharp_Bench
             Chart form2 = new Chart();
             form2.ShowDialog(); 
         }
+
+       
 
              
 

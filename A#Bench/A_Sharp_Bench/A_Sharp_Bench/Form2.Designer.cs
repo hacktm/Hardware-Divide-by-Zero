@@ -31,6 +31,7 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Chart));
             this.CPU_Chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.Load_Chart_Button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.CPU_Chart)).BeginInit();
@@ -74,9 +75,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(527, 457);
             this.Controls.Add(this.Load_Chart_Button);
             this.Controls.Add(this.CPU_Chart);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Chart";
             this.Text = "Chart";
             ((System.ComponentModel.ISupportInitialize)(this.CPU_Chart)).EndInit();
