@@ -1,0 +1,10 @@
+ This application tests the CPU performance of a computer CPU.
+On the algorithmic part, the CPU has to check if numbers from 1 to 32 are Prime numbers and further on if they are Mersenne Prime numbers.And for each loop returns a time.
+The score is determined by the total time from all the loops. The lower is the score , the faster is the CPU. 
+On the embedded part, the arduino communicates via serial with the application and automates the test sequence.
+If the RED LED is blinking continously - CPU testing is in progress
+if the YELLOW LED is blinking with a higher delay - application is in stand by 
+If the GREEN LED is ON - testing has finished and a chart has been generated. 
+
+The buttons can be used to operate the application manually.
+     
