@@ -48,7 +48,7 @@ namespace A_Sharp_Bench
 
         public void Serial_Init()
         {
-            serialPort1.PortName = "COM4";
+            serialPort1.PortName = "COM3";
             serialPort1.BaudRate = 9600;
             serialPort1.Open();
             serialPort1.Write("1");
@@ -95,7 +95,7 @@ namespace A_Sharp_Bench
             int Loop_Number = 6;
             int Loop_Counter = 1;
             long oldTimeMs = 100000000;
-
+            Total_Time = 0;
              
             /*Start of execution console*/ 
             Console.BackgroundColor = ConsoleColor.Blue;
@@ -168,8 +168,7 @@ namespace A_Sharp_Bench
 
             /*Delta*/
             double Delta = Fast - Slow;
-            Console.WriteLine("Delta is:{0}\n", Delta); 
- 
+            Console.WriteLine("Delta is:{0}\n", Delta);
         }
 
         private void beginTest(object sender, EventArgs e)

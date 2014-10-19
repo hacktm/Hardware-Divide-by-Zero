@@ -16,3 +16,13 @@ C:\Users\alex.marinescu\Desktop\Hardware-Divide-by-Zero\A#Bench\A_Sharp_Bench\A_
 C:\Users\alex.marinescu\Desktop\Hardware-Divide-by-Zero\A#Bench\A_Sharp_Bench\A_Sharp_Bench\obj\x86\Debug\A_Sharp_Bench.csproj.GenerateResource.Cache
 C:\Users\alex.marinescu\Desktop\Hardware-Divide-by-Zero\A#Bench\A_Sharp_Bench\A_Sharp_Bench\obj\x86\Debug\A_Sharp_Bench.Chart.resources
 C:\Users\alex.marinescu\Desktop\A#Bench\A_Sharp_Bench\A_Sharp_Bench\obj\x86\Debug\A_Sharp_Bench.Chart.resources
+C:\_work\A#Bench\A_Sharp_Bench\A_Sharp_Bench\bin\Debug\A_Sharp_Bench.exe.config
+C:\_work\A#Bench\A_Sharp_Bench\A_Sharp_Bench\obj\x86\Debug\A_Sharp_Bench.exe
+C:\_work\A#Bench\A_Sharp_Bench\A_Sharp_Bench\obj\x86\Debug\A_Sharp_Bench.pdb
+C:\_work\A#Bench\A_Sharp_Bench\A_Sharp_Bench\bin\Debug\A_Sharp_Bench.exe
+C:\_work\A#Bench\A_Sharp_Bench\A_Sharp_Bench\bin\Debug\A_Sharp_Bench.pdb
+C:\_work\A#Bench\A_Sharp_Bench\A_Sharp_Bench\obj\x86\Debug\A_Sharp_Bench.csprojResolveAssemblyReference.cache
+C:\_work\A#Bench\A_Sharp_Bench\A_Sharp_Bench\obj\x86\Debug\A_Sharp_Bench.A_Sharp_Bench.resources
+C:\_work\A#Bench\A_Sharp_Bench\A_Sharp_Bench\obj\x86\Debug\A_Sharp_Bench.Chart.resources
+C:\_work\A#Bench\A_Sharp_Bench\A_Sharp_Bench\obj\x86\Debug\A_Sharp_Bench.Properties.Resources.resources
+C:\_work\A#Bench\A_Sharp_Bench\A_Sharp_Bench\obj\x86\Debug\A_Sharp_Bench.csproj.GenerateResource.Cache
